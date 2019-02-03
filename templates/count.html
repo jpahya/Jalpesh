@@ -1,0 +1,18 @@
+<h1>Counted</h1>
+<br>
+<a href= "{% url 'home' %}"> Go to Home page</a>
+<h2> Your text</h2>
+<br>
+{{name}}
+<br>
+<h2> Your Count</h2>
+<br>
+Total count  = {{len}}
+<br><br>
+{{z}}
+<br>
+<br>
+{% for words, value in z %}
+{{words}} = {{value}}
+<br/>
+{% endfor %}
